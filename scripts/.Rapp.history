@@ -1,0 +1,1303 @@
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","magenta"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","cyan3"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="cyan3",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","cyan3"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold3"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold3",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold3"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold2",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c("A.millepora","O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+p=seq(0.05,0.49,0.01)#
+length(p)#
+nrow(gbr)
+fc=c();afs=ofav#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}#
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+points(fc,col="white",pch=16)#
+points(fc)
+fc=c();afs=of
+fc=c();afs=of#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+points(fc,col="white",pch=16)#
+points(fc)
+abline(h=0.5,lty=3)#
+abline(h=0.9,lty=3)
+afs
+y
+fc=c();afs=of,n=1
+g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y
+afs
+afs.s
+sum(afs.s)
+plot(afs$afs~afs.s)
+y
+fc=c();afs=of,n=1
+p
+1-(1-p)^g
+1-(1-0.05)^2
+(1-0.05)^2
+1-(1-0.05)^2
+p
+y
+y=1-(1-p)^g
+y
+y=1-((1-p)^g)
+y
+y=1-(1-p)^g
+1-(1-p)^2
+y=1-(1-p)^g
+y
+fc=c();afs=of,n=1
+g=n*2#
+	y=1-(1-p)^g
+fc=c();afs=of,g=1
+fc=c();afs=of,n=1
+g=n*2#
+	y=1-(1-p)^g
+fc=c();afs=of;n=1
+g=n*2#
+	y=1-(1-p)^g
+y
+afs.s=afs$afs*y
+plot(afs$afs~afs.s)
+fc=c();afs=of;n=1#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs$afs~afs.s)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}#
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+fc
+plot(afs$afs~afs.s)
+plot(afs$afs~afs.s/afs$afs)
+plot(afs$afs~(afs.s/afs$afs))
+plot(afs.s/afs$afs~afs.afs)
+plot(afs.s/afs$afs~afs$afs)
+afs$afs
+plot(afs.s~afs$afs)
+fc=c();afs=of;n=1
+g=n*2#
+	y=1-(1-p)^g
+y
+afs.s=afs$afs*y
+plot(afs.s~afs$afs)
+cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)
+fc=c();afs=of;n=1#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs.s~afs$afs)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}#
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+y
+n
+fc=c();afs=of;n=1
+g=n*2#
+	y=1-(1-p)^g
+y
+afs.s=afs$afs*y
+afs.s
+sum(afs.s)/sum(afs$afs)
+plot(afs.s~afs$afs)
+plot(afs.s)
+plot(afs$afs)
+lines(afs.s)
+afs.s
+sum(afs.s)
+sum(afs$afs)
+plot(afs$afs,ylim=c(0,300),type="l",col="red")
+plot(afs$afs,ylim=c(0,350),type="l",col="red")
+lines(afs.s)
+cc=sum(afs.s)/sum(afs$afs)
+fc=c();afs=of;n=5
+g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+	lines(afs.s)
+sum(afs.s)
+sum(afs$afs)
+fc=c();afs=of;n=5#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+	lines(afs.s)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}#
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+fc=c();afs=gbr;n=5#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+	lines(afs.s)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}
+fc=c();afs=gbr;n=5
+g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+	lines(afs.s)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)
+fc=c();afs=of;n=5#
+for (n in 1:20) {#
+	g=n*2#
+	y=1-(1-p)^g#
+	afs.s=afs$afs*y#
+#	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+#	lines(afs.s)#
+	cc=sum(afs.s)/sum(afs$afs)#
+	fc=append(fc,cc)#
+}#
+plot(fc,mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+sumfrac=function(afs) {#
+	fc=c();n=5#
+	for (n in 1:20) {#
+		g=n*2#
+		y=1-(1-p)^g#
+		afs.s=afs$afs*y#
+	#	plot(afs$afs,ylim=c(0,350),type="l",col="red")#
+	#	lines(afs.s)#
+		cc=sum(afs.s)/sum(afs$afs)#
+		fc=append(fc,cc)#
+	}#
+	return(fc)#
+}
+plot(sumfrac(gbr),mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")
+lines(sumfrac(of),lty=2)
+lines(sumfrac(acer),lty=2)
+plot(sumfrac(of),mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")#
+points(fc,col="white",pch=16)#
+points(fc)#
+abline(h=0.5,lty=3)#
+abline(h=0.9,lty=3)#
+abline(h=0.95,lty=3)
+plot(sumfrac(of),mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")#
+points(fc,col="white",pch=16)#
+points(fc)#
+abline(h=0.5,lty=3)#
+abline(h=0.9,lty=3)
+sumfrac(of)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold2",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=substitute(paste(italic("A.millepora","O.faveolata","A.cervicornis"))),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c(substitute(paste(italic("A.millepora"))),substitute(paste(italic("O.faveolata"))),substitute(paste(italic("A.cervicornis")))),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold2",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c(substitute(paste(italic("A.millepora"))),substitute(paste(italic("O.faveolata"))),substitute(paste(italic("A.cervicornis")))),cex=0.9,bty="n",lwd=2)
+substitute(paste(italic("A.millepora")))
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c(substitute(paste(italic("A.millepora","O.faveolata","A.cervicornis")))),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold2",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c(substitute(paste(italic("A.millepora","O.faveolata","A.cervicornis")))),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=c(italic("A.millepora"),"O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=expression(italic("A.millepora"),"O.faveolata","A.cervicornis"),cex=0.9,bty="n",lwd=2)
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=expression(italic("A.millepora"),italic("O.faveolata"),italic("A.cervicornis")),cex=0.9,bty="n",lwd=2)
+plot(Wlo~n,gbr,type="l",mgp=c(2.3,1,0),bty="n",ylab="proportion of alleles",xlab="allele frequency",col="red",lwd=2,ylim=c(0,0.1))#
+lines(Wlo~n,of,type="l",col="blue",lwd=2)#
+lines(Wlo~n,acer,type="l",col="gold2",lwd=2)#
+legend("topright",lty=1,col=c("red","blue","gold2"),legend=expression(italic("A.millepora"),italic("O.faveolata"),italic("A.cervicornis")),cex=0.9,bty="n",lwd=2)
+plot(sumfrac(of),mgp=c(2.3,1,0),bty="n",ylab="proportion of common\nalleles represented",xlab="individuals sampled",type="l")#
+points(sumfrac(of),col="white",pch=16)#
+points(sumfrac(of))#
+abline(h=0.5,lty=3)#
+abline(h=0.9,lty=3)#
+abline(h=0.95,lty=3)
+plastic=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/fdr10pct_angsdCoords.tsv.sorted.clean")
+plast.f=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/fdr10pct_angsdCoords.tsv.sorted.clean.fst.fst.idx.FST")
+plast.r
+plast.r=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/fdr10pct_angsdCoords.tsv.sorted.clean")
+plast.r
+trans=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/transplant")
+trans
+trans.f=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/fdr10pct_angsdCoords.tsv.sorted.clean.fst.fst.idx.FST")
+trans.f
+trans
+fst=trans.f
+genes=trans
+FST=c()
+FST=c();i=1
+contig=genes[i,1]
+start=genes[i,2]
+end=genes[i,3]
+contig
+start
+end
+FF=fst[fst[,1]==contig,]
+FF
+FF=fst[fst[,1]==contig & fst[,2]>=start & fst[,2]<=end,]
+FF
+end
+head(ff)
+head(FF)
+start
+sum(FF[,3])/sum(FF[,4])
+FST[i]=sum(FF[,3])/sum(FF[,4])
+FST
+Fst=function(genes,fst) {#
+	FST=c();i=1#
+	for (i in 1:nrow(genes)) {#
+		contig=genes[i,1]#
+		start=genes[i,2]#
+		end=genes[i,3]#
+		FF=fst[fst[,1]==contig & fst[,2]>=start & fst[,2]<=end,]#
+		FST[i]=sum(FF[,3])/sum(FF[,4])#
+	}#
+	return(FST)#
+}
+Fst(trans,trans.f)
+plot(density(Fst(trans,trans.f)))
+trans$Fst=Fst(trans,trans.f))
+trans$Fst=Fst(trans,trans.f)
+ori=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/origin")#
+ori.f=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/sig_ori.sorted.clean.fst.fst.idx.FST")
+ns=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/ns")
+ns.f=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/nonsig_ori.sorted.clean.fst.fst.idx.FST")
+ori$Fst=Fst(ori,ori.f)
+ori=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/origin")#
+ori.f=read.table("~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/fst_bygene/sig_ori.sorted.clean.fst.fst.idx.FST")
+ori$Fst=Fst(ori,ori.f)
+ns$Fst=Fst(ns,ns.f)
+trans$Fst=Fst(trans,trans.f)
+fst=ori.f
+FST=c();i=1
+contig=genes[i,1]
+start=genes[i,2]
+end=genes[i,3]
+FF=fst[fst[,1]==contig & fst[,2]>=start & fst[,2]<=end,]
+end
+start
+contig
+fst[,1]==contig
+contig
+fst[,1]
+fst[,1] %in% contig
+FF=fst[fst[,1] %in% contig & fst[,2]>=start & fst[,2]<=end,]
+FF
+ori
+sum(FF[,3])/sum(FF[,4])
+FF
+table(fst[,1] %in% contig)
+start
+end
+nrow(FF)>0
+Fst=function(genes,fst) {#
+	FST=c();i=1#
+	for (i in 1:nrow(genes)) {#
+		contig=genes[i,1]#
+		start=genes[i,2]#
+		end=genes[i,3]#
+		FF=fst[fst[,1] %in% contig & fst[,2]>=start & fst[,2]<=end,]#
+		if (nrow(FF)>0) { FST[i]=sum(FF[,3])/sum(FF[,4]) }#
+		else { FST[i]=NA }#
+	}#
+	return(FST)#
+}
+trans$Fst=Fst(trans,trans.f)
+ori$Fst=Fst(ori,ori.f)
+ori
+ori2=na.omit(ori)
+ns$Fst=Fst(ns,ns.f)
+library(DESeq2)#
+setwd('~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/clean_july12/scripts/')
+ll=load("../datasets/GBM_splitModels.RData")#
+ll=load("../datasets/GE_splitModels.RData")#
+ll=load('../datasets/GBM_simpleModels.RData')#
+ll=load('../datasets/GE_simpleModels.RData')#
+# ll=load('../datasets/deseq_exons.RData')#
+# ll=load('../datasets/deseq_introns.RData')#
+#
+# MBD-scores (made by MBDscore_calc.R)#
+ll=load('../datasets/capturedVflowthroughResults.Rdata')#
+classes=data.frame(cbind("gene"=row.names(mbd)))#
+classes$mbd.score= mbd$log2FoldChange#
+plot(density(na.omit(classes$mbd.score)))#
+abline(v=-1.05)#
+class.split=-1.05#
+head(classes)#
+#
+str(vsd.ge)#
+goods=intersect(row.names(vsd.ge),row.names(mbd))#
+length(goods)#
+ge.means=apply(vsd.ge[goods,],1,mean)#
+plot(ge.means~mbd[goods,"log2FoldChange"],pch=16, cex=0.3,col=rgb(0,0,0,alpha=0.1))#
+abline(v=class.split)
+dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sigsup=(xn$padj<siglimit & xn$lfc>0)#
+sigsdn=(xn$padj<siglimit & xn$lfc<0)#
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1 # Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sigsup=(xn$padj<siglimit & xn$lfc>0)#
+sigsdn=(xn$padj<siglimit & xn$lfc<0)#
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$lfc=(-1)*dset$lfc # Fig 3a
+dset$lfc
+dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # Fig 3a
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sigsup=(xn$padj<siglimit & xn$lfc>0)#
+sigsdn=(xn$padj<siglimit & xn$lfc<0)#
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+length(sigs)
+dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+length(sigs)#
+sigsup=(xn$padj<siglimit & xn$lfc>0)#
+sigsdn=(xn$padj<siglimit & xn$lfc<0)#
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+sum(sigs)
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup)
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn)
+dset=o2k.gbm;YL=c(-1,1.3);YLAB="GBM change";DSCALE=0.6 # Fig 2A, Fig. S8A#
+# dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.gbm;YL=c(-1,1.3);YLAB="GBM change";DSCALE=0.6 # Fig 2A, Fig. S8A#
+# dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 #
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+summary(dset)
+summary(dset)head(dset)
+head(dset)
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2; dset$log2FoldChange=dset$baseMean+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2; dset$log2FoldChange=dset$baseMean+dset$log2FoldChange
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1,2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.2; dset$log2FoldChange=dset$baseMean+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(2,5);YLAB="GE change";DSCALE=1.2; dset$log2FoldChange=dset$baseMean+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(0,10);YLAB="GE change";DSCALE=1.2; dset$log2FoldChange=dset$baseMean+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+head(dset)
+hist(dset$baseMean)
+hist(log(dset$baseMean))
+dset=o2k.ge;YL=c(0,10);YLAB="GE change";DSCALE=1.2; dset$log2FoldChange=log(dset$baseMean,2)+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(0,8);YLAB="GE change";DSCALE=1.2; dset$log2FoldChange=log(dset$baseMean,2)+dset$log2FoldChange#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.gbm;YL=c(-1,1.3);YLAB="GBM change";DSCALE=0.6 # Fig 2A, Fig. S8A. 853 DMGs, 65 up, 788 down#
+# dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B. no DMGs#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a. 379 DMGs, 196 up, 183 down#
+ dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+dset=o2k.gbm;YL=c(-1,1.3);YLAB="GBM change";DSCALE=0.6 # Fig 2A, Fig. S8A. 853 DMGs, 65 up, 788 down#
+# dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B. no DMGs#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a. 379 DMGs, 196 up, 183 down#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)#
+#
+# adding density curves for significant genes#
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+tes=read.table("../datasets/intergenics.counts")#
+bams=read.table("../datasets/bams")[,1]#
+bams=gsub("allbams/|\\..+","",bams)#
+row.names(tes)=paste(tes[,1],tes[,2],tes[,3],sep=".")#
+tes.lng=tes[,3]-tes[,2]#
+tes=tes[,-c(1:3)]#
+names(tes)=bams#
+sds=apply(log(tes+0.1),1,sd)#
+hist(sds)#
+tes=tes[sds>quantile(sds,0.05) & sds<quantile(sds,0.95),]#
+sds=apply(log(tes+0.1),1,sd)#
+hist(sds)#
+head(tes)#
+tes1=tes[sample(1:nrow(tes),500),]#
+nrow(tes1)#
+inter=tes
+tes=read.table("../datasets/repeats.counts")#
+bams=read.table("../datasets/bams")[,1]#
+bams=gsub("allbams/|\\..+","",bams)#
+row.names(tes)=paste(tes[,1],tes[,2],tes[,3],sep=".")#
+tes.lng=tes[,3]-tes[,2]#
+tes=tes[,-c(1:3)]#
+names(tes)=bams#
+sds=apply(log(tes+0.1),1,sd)#
+hist(sds)#
+tes=tes[sds>quantile(sds,0.05) & sds<quantile(sds,0.95),]#
+head(tes)#
+tes1=tes[sample(1:nrow(tes),500),]#
+nrow(tes1)
+library(DESeq2)#
+#
+counts=read.table('../datasets/genics.counts',sep="\t")#
+ll=load("../datasets/coord_tables.RData")#
+bams=read.table("../datasets/bams")[,1]#
+bams=gsub("allbams/|\\.trim.+","",bams)#
+head(counts)#
+table(genes$start == counts[,2])#
+counts=counts[,-c(1:3)]#
+row.names(counts)=genes[,1]#
+colnames(counts)=bams
+ll=load("../datasets/GE_data.RData")#
+names(conds.ge)=c("sample","ind","ori","tra")
+counts=read.table('../datasets/genics.counts',sep="\t")#
+ll=load("../datasets/coord_tables.RData")#
+bams=read.table("../datasets/bams")[,1]#
+bams=gsub("allbams/|\\.trim.+","",bams)#
+head(counts)#
+table(genes$start == counts[,2])#
+counts=counts[,-c(1:3)]#
+row.names(counts)=genes[,1]#
+colnames(counts)=bams
+library(DESeq2)#
+setwd('~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/clean_july12/scripts/')#
+# loading results of DESeq models (made by scripts deseq_GE.R and deseq_GBM.R) :#
+#
+ll=load("../datasets/GBM_splitModels.RData")#
+ll=load("../datasets/GE_splitModels.RData")#
+ll=load('../datasets/GBM_simpleModels.RData')#
+ll=load('../datasets/GE_simpleModels.RData')#
+# ll=load('../datasets/deseq_exons.RData')#
+# ll=load('../datasets/deseq_introns.RData')#
+#
+# MBD-scores (made by MBDscore_calc.R)#
+ll=load('../datasets/capturedVflowthroughResults.Rdata')#
+classes=data.frame(cbind("gene"=row.names(mbd)))#
+classes$mbd.score= mbd$log2FoldChange#
+plot(density(na.omit(classes$mbd.score)))#
+abline(v=-1.05)#
+class.split=-1.05#
+head(classes)
+str(vsd.ge)#
+goods=intersect(row.names(vsd.ge),row.names(mbd))#
+length(goods)#
+ge.means=apply(vsd.ge[goods,],1,mean)#
+plot(ge.means~mbd[goods,"log2FoldChange"],pch=16, cex=0.3,col=rgb(0,0,0,alpha=0.1))#
+abline(v=class.split)
+dset=o2k.gbm;YL=c(-1,1.3);YLAB="GBM change";DSCALE=0.6 # Fig 2A, Fig. S8A. 853 DMGs, 65 up, 788 down#
+# dset=k2o.gbm;YL=c(-1,1);YLAB="GBM change";DSCALE=0.6 # Fig 2B, , Fig. S8B. no DMGs#
+# dset=natives.gbm;YL=c(-1,1);YLAB="GBM difference";DSCALE=0.6 # Fig S8 C#
+# dset=ori.s;YL=c(-1,1);YLAB="GBM difference";DSCALE=1;dset$log2FoldChange=(-1)*dset$log2FoldChange # note: inverting the original comparison sign to make it K vs O ; Fig 3a. 379 DMGs, 196 up, 183 down#
+# dset=o2k.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.2 # Fig 2A, Fig. 2F. 239 DEGs, 87 up, 152 down.#
+# dset=k2o.ge;YL=c(-1.5,1.5);YLAB="GE change";DSCALE=1.8 # Fig 2A, Fig. 2G. 578 DEGs, 344 up, 234 down.#
+# dset=natives.ge;YL=c(-1.5,1.5);YLAB="GBM difference";DSCALE=1 #
+# dset=ori.ge;YL=c(-1.5,1.5);YLAB="GE difference";DSCALE=2 # 662 DEGs, O vs K: 321 up, 341 down#
+summary(dset)#
+head(dset)#
+gg=intersect(classes$gene,row.names(dset))#
+#
+# plotting scatters#
+change=data.frame(cbind("gene"=row.names(dset[gg,]),"lfc"=dset[gg,]$log2FoldChange,"padj"=dset[gg,]$padj))#
+change$lfc=as.numeric(as.character(change$lfc))#
+change$padj=as.numeric(as.character(change$padj))#
+x=merge(classes,change,by="gene")#
+plot(lfc~mbd.score,x,col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,ylim=YL,xlim=c(-7,5),mgp=c(2.3,1,0),xlab="MBD score",ylab=YLAB)#
+ll=lm(lfc~mbd.score,x)#
+summary(ll) #k2o: 0.13; o2k: 0.54 ; ori: 0.023 ; natives: 0.07 ; k2o.ge: 0.013 ; o2k.ge: 0.017#
+abline(ll,col="red")#
+abline(v=0,lty=3,col="grey80",lwd=1.5)#
+abline(h=0,lty=3,col="grey80",lwd=1.5)
+siglimit=0.1#
+xn=na.omit(x)#
+sigs=(xn$padj<siglimit)#
+sum(sigs) #
+sigsup=(xn$padj<siglimit & xn$lfc>0); sum(sigsup) #
+sigsdn=(xn$padj<siglimit & xn$lfc<0); sum(sigsdn) #
+#points(lfc~mbd.score,x[sigs,],col=rgb(0.8,0.2,0.2,alpha=0.25),pch=16,cex=0.3)#
+lines(density(xn[sigsup,"mbd.score"])$x,DSCALE*density(xn[sigsup,"mbd.score"])$y+YL[1],col="red")#
+lines(density(xn[sigsdn,"mbd.score"])$x, DSCALE*density(xn[sigsdn,"mbd.score"])$y+YL[1],col="blue")
+geres=read.table("../datasets/MWU_MF_o2k_ge.csv",header=T)#
+gbmres=read.table("../datasets/MWU_MF_o2k_gbm.csv",header=T)
+ll=load("../datasets/GBM_splitmodels.RData")#
+colnames(vsd)=sub("_2m","",colnames(vsd))#
+library(vegan)#
+#
+# multivariate anova:#
+#
+ad=adonis(t(vsd)~ori+ind+tra,conds,method="manhattan")#
+ad
+# plotting pie-chart of variance explained#
+labs=c("origin","colony.id","transplant","residuals")#
+cols=c("skyblue","green2","coral","grey80")#
+pie(ad$aov.tab$R2[1:4],labels=labs,col=cols,main="GBM")
+fitpc=capscale(dist(t(vsd),method="manhattan")~1)#
+pc1expl=100*round(summary(eigenvals(fitpc))[2,1],2)#
+pc2expl=100*round(summary(eigenvals(fitpc))[2,2],2)#
+grp=rep("red",ncol(vsd))#
+grp[grep("OK",colnames(vsd))]="gold"#
+grp[grep("KK",colnames(vsd))]="blue"#
+grp[grep("KO",colnames(vsd))]="skyblue"#
+conds$oritra=paste(conds$ori,conds$tra,sep="")#
+plot(fitpc$CA$u,pch=16, col="white",xlab=paste("PC1 ( ",pc1expl,"% )",sep=""),ylab=paste("PC2 ( ",pc2expl,"% )",sep=""),mgp=c(2.3,1,0),main="GBM")#
+ordiellipse(fitpc$CA$u,conds$oritra,draw="polygon",col=c("blue","skyblue","gold","red"))#
+ordispider(fitpc$CA$u,conds$ind,col="grey50")#
+points(fitpc$CA$u,pch=16, col=grp,xlab=paste("PC1 ( ",pc1expl,"% )",sep=""))
+#---------- CpG-OE vs MBD score#
+#
+ll=load('../datasets/mbd_classes_FULL_GENES.Rdata')#
+head(classes)#
+#
+hist(classes$mbd.score,breaks=40,yaxt="n",ylab="",xlim=c(-5.5,5.5))#
+plot(density(classes$mbd.score),yaxt="n",ylab="",xlim=c(-6,6),bty="n")#
+abline(v=max(subset(classes,mbd.class==1)$mbd.score),col="red")#
+load("../datasets/cpgoe.Rdata")
+plot(res2[,'cpgOE'] ~ res2[,'log2FoldChange'], xlab ="MBD-score", ylab =expression("CpG"["o/e"]), col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,xlim=c(-7,7), ylim = c(0, 1.5),mgp=c(2.3,1,0),bty="n")#
+abline(v=max(subset(classes,mbd.class==1)$mbd.score)+0.5,col="red")#
+mbdcut=max(subset(classes,mbd.class==1)$mbd.score)+0.5#
+classes$mbd.class2=1#
+classes$mbd.class2[classes$mbd.score>mbdcut]=2#
+save(classes,file="datasets/mbd_classes_FULL_GENES.Rdata")
+plot(res2[,'cpgOE'] ~ res2[,'log2FoldChange'], xlab ="MBD-score", ylab =expression("CpG"["o/e"]), col=rgb(0,0,0,alpha=0.01),pch=16,cex=0.5,xlim=c(-7,7), ylim = c(0, 1.5),mgp=c(2.3,1,0),bty="n")#
+abline(v=max(subset(classes,mbd.class==1)$mbd.score)+0.5,col="red")#
+mbdcut=max(subset(classes,mbd.class==1)$mbd.score)+0.5
+ll=load("../datasets/GBM_q30_deseq_min20.RData")
+ll=load('../datasets/capturedVflowthroughResults_may24_q30.Rdata')
+ll=load('../datasets/capturedVflowthroughResults.Rdata')
+classes=data.frame(cbind("gene"=row.names(res)))
+ll=load("../datasets/MBDclasses_q30.RData")#
+vsd1=data.frame(vsd)#
+vsd1$gene=row.names(vsd)#
+vsd1=merge(vsd1,classes,by="gene")#
+head(vsd1)#
+#
+library(Rmisc)#
+class.delta=c()#
+for (s in colnames(vsd)){#
+	see=summarySE(vsd1,measurevar=s,groupvars="class")#
+	class.delta=append(class.delta,see[2,3]-see[1,3])#
+}#
+#
+rbPal <- colorRampPalette(c('white','black'))#
+Cols <- rbPal(10)[as.numeric(cut(class.delta[order(class.delta)],breaks = 10))]#
+reo=fitpc$CA$u[order(class.delta),]#
+plot(reo,col="grey50",xlab=paste("PC1 ( ",pc1expl,"% )",sep=""),ylab=paste("PC2 ( ",pc2expl,"% )",sep=""),mgp=c(2.3,1,0),main="GBM")#
+points(reo,pch=16, col=Cols)#
+ge.cd=data.frame("GEcd"=class.delta)#
+ge.cd$sample=row.names(fitpc$CA$u)#
+ef=envfit(fitpc,ge.cd,permu=9999)#
+ef # p<1e-5, R2=0.36#
+plot(ef,cex=0.001,col="red")
+summary(lm(class.delta~conds$ind))
+#---------- D A P C :  GBM#
+#
+library(adegenet)#
+ll=load("datasets/GBM_q30_deseq_min20.RData")#
+#
+grp=sub("[0-9]+","",colnames(vsd))#
+kk=grep("KK",colnames(vsd))#
+ok=grep("OK",colnames(vsd))#
+oo=grep("OO",colnames(vsd))#
+ko=grep("KO",colnames(vsd))#
+a.vsd=vsd[,c(oo,kk)]#
+a.grp=grp[c(oo,kk)]#
+a.vsd.supp=vsd[,c(ok,ko)]#
+a.grp.supp=grp[c(ok,ko)]#
+dp=dapc(t(a.vsd),a.grp, n.da=1, perc.pca=80)#
+scatter(dp)#
+#
+pred.sup<-predict.dapc(dp,newdata=(t(a.vsd.supp))) #
+#
+#create another dataframe in order to plot these predicted values#
+test<-dp#
+test$ind.coord<-pred.sup$ind.scores#
+test$posterior<-pred.sup$posterior#
+test$assign<-pred.sup$assign#
+test$grp<-as.factor(substr(colnames(a.vsd.supp), start =1, stop=2))#
+#
+gbm.ld1=data.frame(rbind(test$ind.coord,dp$ind.coord))#
+gbm.ld1$Colony.ID=sub("_2m","",row.names(gbm.ld1))#
+names(gbm.ld1)[1]="gbm.ld.q30"#
+#
+ll=load('~/Dropbox/Documents/dixon_2017_RT-GBM/reciprocal_transplant_methylationV2/datasets/traits_april11.RData')#
+head(traits)#
+#
+x=merge(traits,gbm.ld1,by="Colony.ID",all.x=T)#
+nrow(x)#
+traits=x#
+names(traits)#
+#
+#GATHER ACCLIMITIZATION ("SIMILARITY") DATA FOR GBM DATA#
+#(the inverse difference in dapc coordinate for transplants and#
+# the mean for home corals from the site they were transplanted to)#
+x= get_ld_diffs(traits, ld.col='gbm.ld.q30', geno1='OO', geno2='KO')#
+y=get_ld_diffs(traits, ld.col='gbm.ld.q30', geno1='KK', geno2='OK')#
+clim.gbm=rbind(x,y)#
+clim.gbm$gbm.similarity.q30=zscore(clim.gbm$acclim)*-1#
+names(clim.gbm)#
+cc=clim.gbm[,c(1,55)]#
+traits=merge(traits,cc,by="Colony.ID",all.x=T)#
+names(traits)#
+save(traits,file="datasets/traits_may28.RData")#
+plot(gbm.ld.q30~gbm.ld1,traits)#
+#
+#apply the disciminate function to all datasets at once#
+pred.sup<-predict.dapc(dp,newdata=(t(vsd)), var.contrib=T)#
+gbm.dapc=data.frame(pred.sup$ind.scores)#
+gbm.dapc$treat=substr(rownames(gbm.dapc), start=1, stop=2)#
+rownames(gbm.dapc) = sub("_2m", "", rownames(gbm.dapc)) #remove '_2m' from rownames#
+mns=tapply(gbm.dapc$LD1, gbm.dapc$treat, mean)#
+source('scripts/reciprocal_methylation_project_functions.R')#
+library(scales)#
+plot.mns=F#
+personalized_ghosts(gbm.dapc, plot.mns=plot.mns) #for gbm#
+#
+#Plot the distributions of the transplant samples along the disciminant axis#
+#quartz()#
+scatter(test,bg="white",scree.da=FALSE,legend=TRUE,solid=.4,ylim=c(0,0.6),xlim=c(-4,4)) #
+#adjust axes to correspond to previous graph, then overlay plots in photoshop
+ori=sub(".$","",a.grp)#
+num=gsub("[OK]","",colnames(a.vsd))#
+a.col=paste(ori,num,sep="")#
+natives=data.frame("colony"=a.col,"LDn"=dp$ind.coord)#
+#
+ori=sub(".$","",a.grp.supp)#
+num=gsub("[OK]","",colnames(a.vsd.supp))#
+a.col=paste(ori,num,sep="")#
+transpl=data.frame("colony"=a.col,"LDn"=test$ind.coord)#
+#
+transpl$diff=transpl$LD1-natives$LD1#
+transpl$diff[ori=="O"]=(-1)*transpl$diff[ori=="O"]#
+transpl$ori=ori#
+boxplot(diff~ori,transpl)#
+#
+ggt=transpl#
+library(ggplot2)#
+ggplot(ggt,aes(ori,diff))+geom_violin()+geom_jitter(height=0,width=0.1,size=0.6)+theme_bw()+ylab("GBM shift")+xlab("")+ylim(-0.5,5.5)
+ll=load("../datasets/GBM_q30_deseq_min20.RData")

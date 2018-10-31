@@ -1,0 +1,68 @@
+# sorting
+cat genic | perl -pe 's/NW_//'| perl -pe 's/\.1//' | sort -k 1,1n -k 2,2n | perl -pe 's/(\S+)\s(\S+)\s(\S+)/NW_$1\.1\t$2\t$3/' > genics
+cat exons | grep -v NC_ | perl -pe 's/NW_//'| perl -pe 's/\.1//' | sort -k 1,1n -k 2,2n | perl -pe 's/(\S+)\s(\S+)\s(\S+)/NW_$1\.1\t$2\t$3/' > exonss
+
+# making "bed genome" out of fasta
+cat adig_zoox_combo.fa | awk '$0 ~ ">" {print c; c=0;printf substr($0,2,100) "\t"; } $0 !~ ">" {c+=length($0);} END { print c; }' >adig_zoox_combo.genome
+
+cut -f 1,4,5 adig_zoox_combo.fasta.out.gff.gff3 > adig_repeats.bed
+bedtools sort -i adig_repeats.bed > adigRepeats.bed
+
+# nongenic regions, 2kb away from any gene, at least 1 kb long:
+bedtools complement -i genics -g adig_zoox_combo.genome | grep NW | awk '{print $1"\t"$2+2000"\t"$3-2000}' | awk '$3-$2>1000'> nongenics
+bedtools complement -i adigRepeats.bed -g adig_zoox_combo.genome | grep NW > nonTE
+bedtools intersect -a nongenics -b nonTE >nongenics_nonTE
+awk '($3-$2) >= 1000' nongenics_nonTE > nongte1k
+cat nongte1k | wc -l
+# 24138
+
+# introns, 200 bp away from any exon, >500 bp long
+bedtools complement -i exonss -g adig_zoox_combo.genome > nonexons
+bedtools intersect -a nonexons -b genics | awk '{print $1"\t"$2+200"\t"$3-200}' | awk '$3-$2>499'>introns
+cat introns | wc -l
+# 57673
+
+# selecting repeated elements >500b in length
+cat adig_zoox_combo.fasta.out.gff.gff3 | grep -v Unknown > goodTEs.gff3
+cut -f 1,4,5 goodTEs.gff3 > goodTEs.bed
+awk '($3-$2) >= 500' goodTEs.bed > longTEs
+cat longTEs | wc -l
+#21321
+
+# BAMDIR=/corral-repl/utexas/tagmap/dixon_backups/reciprocal_methylation/new_mbd_mapping_files
+mkdir allbams
+cd allbams
+cp $BAMDIR/*_2m.*.bam .
+
+# only retaining well-mapped reads (Q30)
+>q30
+for F in `ls *Removed.bam`;do
+echo "samtools view -q 30 -b $F >$F.q30.bam" >>q30
+done
+# executing all commands in the file q30 in parallel using LAUNCHER module:
+launcher_creator.py -j q30 -n q30 -t 0:10:00 -e matz@utexas.edu -a mega2014 -N 2
+sbatch q30.slurm
+
+# indexing filtered bam files
+>si
+for F in `ls *.q30.bam`;do
+echo "samtools index $F">>si
+done
+# executing all commands in the file si in parallel using LAUNCHER module:
+launcher_creator.py -j si -n si -t 0:30:00 -e matz@utexas.edu -a mega2014 -N 2
+sbatch si.slurm
+
+# using bedtools to get read counts in regions
+ls allbams/*.q30.bam>bams
+>ctss
+echo "bedtools multicov -bams allbams/*.q30.bam -bed exonss >exons.counts
+bedtools multicov -bams allbams/*.q30.bam -bed introns >introns.counts
+bedtools multicov -bams allbams/*.q30.bam -bed nongte1k >intergenics.counts
+bedtools multicov -bams allbams/*.q30.bam -bed longTEs >repeats.counts
+bedtools multicov -bams allbams/*.q30.bam -bed allbams/bisulfite >bisulfite.counts
+bedtools multicov -bams allbams/*.q30.bam -bed genics >genics.counts" >ctss
+# executing all commands in the file ctss in parallel using LAUNCHER module:
+launcher_creator.py -j ctss -n ctss -a tagmap  -N 1 -t 6:00:00 -q normal -e matz@utexas.edu
+sbatch ctss.slurm
+
+
