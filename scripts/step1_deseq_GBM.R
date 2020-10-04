@@ -1,3 +1,4 @@
+library(DESeq2)
 
 #------- assembling genic counts table 
 
